@@ -58,7 +58,7 @@ function debounce(callback, wait) {
     };
 }
 
-//Script to generate a password in Zapier
+//Script to generate a password in Zapier - only used in Zapier
 function randomStr(len, arr) {
     var ans = '';
     for (var i = len; i > 0; i--) {
