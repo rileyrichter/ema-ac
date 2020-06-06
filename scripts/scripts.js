@@ -19,32 +19,30 @@ $('#addcwagain').click(function() {
 // for both the password & repeat-password fields
 // call the debounce function to run the input function after 500 milliseconds
 $('#password, #password-confirm').on('input', debounce(() => {
-	// if the value on the password field
-  // equals the value of the repeat-password field
-	if($('#password').val() === $('#password-confirm').val()){
-  	// click the .success field to initiate webflow interaction
-    // that shows a successful match
-		$('.confirm-click').click();
-  }
-  else{ // if the values don't match
-  	// click the .fail field to initiate webflow interaction
-    // that shows a failed match
-  	$('.not-confirmed-click').click();
-  }
+    // if the value on the password field
+    // equals the value of the repeat-password field
+    if ($('#password').val() === $('#password-confirm').val()) {
+        // click the .success field to initiate webflow interaction
+        // that shows a successful match
+        $('.confirm-click').click();
+    } else { // if the values don't match
+        // click the .fail field to initiate webflow interaction
+        // that shows a failed match
+        $('.not-confirmed-click').click();
+    }
 }, 500));
 
 
 // on submit button click
-$('#submit').click(()=>{
-	// if the passwords match
-	if($('#password').val() === $('#password-confirm').val()){
-  		// submit form
-		return true;
-  }
-  else{ // if the passwords don't match
-  	// prevent form submit
-  	return false;
-  }
+$('#submit').click(() => {
+    // if the passwords match
+    if ($('#password').val() === $('#password-confirm').val()) {
+        // submit form
+        return true;
+    } else { // if the passwords don't match
+        // prevent form submit
+        return false;
+    }
 });
 
 // debounce function
@@ -52,26 +50,22 @@ $('#submit').click(()=>{
 // the reason we use it here is to ensure the validate code runs after every 500 millisec
 // compared to running on every character the user enters as it would have without the debounce func
 function debounce(callback, wait) {
-	let timeout;
-  	return (...args) => {
-  		const context = this;
-    	clearTimeout(timeout);
-    	timeout = setTimeout(() => callback.apply(context, args), wait);
-  	};
+    let timeout;
+    return (...args) => {
+        const context = this;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => callback.apply(context, args), wait);
+    };
 }
 
-//From the style page for the copy colors buttons
- new Clipboard('.style-color-button');
-
-
 //Script to generate a password in Zapier
-function randomStr(len, arr) { 
-  var ans = ''; 
-  for (var i = len; i > 0; i--) { 
-    ans += 
-    arr[Math.floor(Math.random() * arr.length)]; 
-  } 
-  return ans; 
-} 
+function randomStr(len, arr) {
+    var ans = '';
+    for (var i = len; i > 0; i--) {
+        ans +=
+            arr[Math.floor(Math.random() * arr.length)];
+    }
+    return ans;
+}
 
-output = [{password: randomStr(8, '123456789abcdefghijklmnopqrstuvwxyz')}];
+output = [{ password: randomStr(8, '123456789abcdefghijklmnopqrstuvwxyz') }];
