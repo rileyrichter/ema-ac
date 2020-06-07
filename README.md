@@ -10,3 +10,5 @@ The code here serves two small functions:
 2. Code to validate passwords and fire an interaction if the pw's match/don't match. Props to [Finsweet](https://www.finsweethacks.com/34).
 
 Other code used for this project lives in the private repository. 
+
+All files served via [JS Delivr](https://www.jsdelivr.com/).
