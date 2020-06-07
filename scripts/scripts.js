@@ -57,15 +57,3 @@ function debounce(callback, wait) {
         timeout = setTimeout(() => callback.apply(context, args), wait);
     };
 }
-
-//Script to generate a password in Zapier - only used in Zapier
-function randomStr(len, arr) {
-    var ans = '';
-    for (var i = len; i > 0; i--) {
-        ans +=
-            arr[Math.floor(Math.random() * arr.length)];
-    }
-    return ans;
-}
-
-output = [{ password: randomStr(8, '123456789abcdefghijklmnopqrstuvwxyz') }];
