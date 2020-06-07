@@ -11,4 +11,4 @@ The code here serves two small functions:
 
 Other code used for this project lives in the private repository. 
 
-All files served via [JS Delivr](https://www.jsdelivr.com/).
+All files served via [jsDelivr](https://www.jsdelivr.com/).
