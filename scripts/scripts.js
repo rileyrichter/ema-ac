@@ -1,7 +1,7 @@
 // Add the current selector to the on-demand menu item if in these directories
 
 $(document).ready(function() {
-    if (window.location.href.indexOf("categories") > -1) {
+    if (window.location.href.indexOf("category") > -1) {
 		setTimeout(function(){
 			let myLink = document.getElementById('on-demand');
 			myLink.className += (" w--current");
