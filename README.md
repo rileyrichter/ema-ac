@@ -6,9 +6,10 @@ The site was built in [Webflow](https://webflow.com) and the backend runs on [Me
 
 The code here serves two small functions:
 
-1. Code to pass values from an input to a success state of a form. 
+1. Code to pass values from an input to a success state of a form.
 2. Code to validate passwords and fire an interaction if the pw's match/don't match. Props to [Finsweet](https://www.finsweethacks.com/34).
+3. Code to add the current selector to the On-Demand menu item depending on the directory.
 
-Other code used for this project lives in the private repository. 
+Other code used for this project lives in the private repository.
 
 All files served via [jsDelivr](https://www.jsdelivr.com/).
