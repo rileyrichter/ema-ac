@@ -1,3 +1,28 @@
+// Add the current selector to the on-demand menu item if in these directories
+
+$(document).ready(function() {
+    if (window.location.href.indexOf("categories") > -1) {
+		setTimeout(function(){
+			let myLink = document.getElementById('on-demand');
+			myLink.className += (" w--current");
+		  }, 100);
+	} 
+    if (window.location.href.indexOf("breakout-sessions") > -1) {
+		setTimeout(function(){
+			let myLink = document.getElementById('on-demand');
+			myLink.className += (" w--current");
+		  }, 100);
+	} 	
+	if (window.location.href.indexOf("tags") > -1) {
+		setTimeout(function(){
+			let myLink = document.getElementById('on-demand');
+			myLink.className += (" w--current");
+		  }, 100);
+    } 	else {
+		console.log(`ready`);
+	}
+  });
+
 // Pass co-workers name to success state for add co-workers page
 
 $('#add_coworkers').click(function() {
