@@ -19,7 +19,7 @@ $(document).ready(function() {
 			myLink.className += (" w--current");
 		  }, 100);
     } 	else {
-		console.log(`ready`);
+		// nothing to do here, intentionally left blank
 	}
   });
 
