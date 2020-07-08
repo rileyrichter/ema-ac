@@ -16,6 +16,8 @@ $(document).ready(function() {
 	if (window.location.href.indexOf("tag") > -1) {
 		setTimeout(function(){
 			let myThirdLink = document.getElementById('on-demand');
+            myThirdLink.className += (" w--current");
+            let myThirdLink = document.getElementById('nav-tag');
 			myThirdLink.className += (" w--current");
 		  }, 100);
     }
@@ -29,10 +31,9 @@ $(document).ready(function() {
 		setTimeout(function(){
 			let myFifthLink = document.getElementById('on-demand');
             myFifthLink.className += (" w--current");
-            
             let mySixthLink = document.getElementById('nav-presenter');
 			mySixthLink.className += (" w--current");
-		  }, 200);
+		  }, 100);
     }
     
     else {
