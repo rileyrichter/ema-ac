@@ -32,7 +32,7 @@ $(document).ready(function() {
             
             let mySixthLink = document.getElementById('nav-presenter');
 			mySixthLink.className += (" w--current");
-		  }, 100);
+		  }, 200);
     }
     
     else {
