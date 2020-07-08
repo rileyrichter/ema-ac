@@ -13,12 +13,26 @@ $(document).ready(function() {
 			myLink.className += (" w--current");
 		  }, 100);
 	} 	
-	if (window.location.href.indexOf("tags") > -1) {
+	if (window.location.href.indexOf("tag") > -1) {
 		setTimeout(function(){
 			let myLink = document.getElementById('on-demand');
 			myLink.className += (" w--current");
 		  }, 100);
-    } 	else {
+    }
+    if (window.location.href.indexOf("all-breakout-sessions") > -1) {
+		setTimeout(function(){
+			let myLink = document.getElementById('on-demand');
+			myLink.className += (" w--current");
+		  }, 100);
+    }
+    if (window.location.href.indexOf("presenters") > -1) {
+		setTimeout(function(){
+			let myLink = document.getElementById('on-demand');
+			myLink.className += (" w--current");
+		  }, 100);
+    }
+    
+    else {
 		// nothing to do here, intentionally left blank
 	}
   });
