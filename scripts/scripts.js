@@ -17,8 +17,8 @@ $(document).ready(function() {
 		setTimeout(function(){
 			let myThirdLink = document.getElementById('on-demand');
             myThirdLink.className += (" w--current");
-            let myThirdLink = document.getElementById('nav-tag');
-			myThirdLink.className += (" w--current");
+            let mySeventhLink = document.getElementById('nav-tag');
+			mySeventhLink.className += (" w--current");
 		  }, 100);
     }
     if (window.location.href.indexOf("all-breakout-sessions") > -1) {
