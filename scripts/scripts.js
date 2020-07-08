@@ -4,7 +4,9 @@ $(document).ready(function() {
     if (window.location.href.indexOf("category") > -1) {
 		setTimeout(function(){
 			let myFirstLink = document.getElementById('on-demand');
-			myFirstLink.className += (" w--current");
+            myFirstLink.className += (" w--current");
+            let myEighthLink = document.getElementById('nav-track');
+			myEighthLink.className += (" w--current");
 		  }, 100);
 	} 
     if (window.location.href.indexOf("breakout-sessions") > -1) {
