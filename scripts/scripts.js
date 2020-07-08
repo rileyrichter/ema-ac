@@ -3,32 +3,35 @@
 $(document).ready(function() {
     if (window.location.href.indexOf("category") > -1) {
 		setTimeout(function(){
-			let myLink = document.getElementById('on-demand');
-			myLink.className += (" w--current");
+			let myFirstLink = document.getElementById('on-demand');
+			myFirstLink.className += (" w--current");
 		  }, 100);
 	} 
     if (window.location.href.indexOf("breakout-sessions") > -1) {
 		setTimeout(function(){
-			let myLink = document.getElementById('on-demand');
-			myLink.className += (" w--current");
+			let mySecondLink = document.getElementById('on-demand');
+			mySecondLink.className += (" w--current");
 		  }, 100);
 	} 	
 	if (window.location.href.indexOf("tag") > -1) {
 		setTimeout(function(){
-			let myLink = document.getElementById('on-demand');
-			myLink.className += (" w--current");
+			let myThirdLink = document.getElementById('on-demand');
+			myThirdLink.className += (" w--current");
 		  }, 100);
     }
     if (window.location.href.indexOf("all-breakout-sessions") > -1) {
 		setTimeout(function(){
-			let myLink = document.getElementById('on-demand');
-			myLink.className += (" w--current");
+			let myFourthLink = document.getElementById('on-demand');
+			myFourthLink.className += (" w--current");
 		  }, 100);
     }
     if (window.location.href.indexOf("presenters") > -1) {
 		setTimeout(function(){
-			let myLink = document.getElementById('on-demand');
-			myLink.className += (" w--current");
+			let myFifthLink = document.getElementById('on-demand');
+            myFifthLink.className += (" w--current");
+            
+            let mySixthLink = document.getElementById('nav-presenter');
+			mySixthLink.className += (" w--current");
 		  }, 100);
     }
     
